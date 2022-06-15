@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+div.container {
+  font-family: "Poppins", sans-serif;
+}
+
+div.container > header {
+  color: black;
+  background-image: radial-gradient(#f7ce68, #f19661);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+}
+
+header > div.row {
+  margin-bottom: 2em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header > div.row > h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+  padding: 0.5em 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header > div.row li {
+  display: inline-block;
+}
+header > div.row a {
+  color: black;
+  font-weight: 900;
+  padding: 0.5em 0.8em;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.1s;
+}
+
+header > div.row a:hover {
+  border-bottom: solid black;
+}
+
+header > div.row2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+header > div.row2 img {
+  width: 100%;
+}
+
+header > button {
+  background-color: transparent;
+  padding: 0.8em 1.5em;
+  margin: 1em auto;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.5s;
+}
+
+header > button:hover {
+  color: black;
+  background-color: #fff;
+}
+
+/* --- styles for article --- */
+
+article {
+  margin-top: 5em;
+}
+
+article > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+article div.col-4 {
+  border: solid rgb(201, 193, 193);
+  border-radius: 10px;
+  width: 40%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article p.title {
+  color: black;
+  text-align: center;
+  margin: 1em 0;
+  position: relative;
+}
+
+article p.title::after {
+  content: "";
+  background-color: red;
+  border: 1px solid red;
+  margin-top: 1em;
+  padding: 0 2em;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+article img {
+  width: 100%;
+}
+
+article p {
+  color: transparent;
+  text-align: center;
+  background-image: linear-gradient(#f7ce68, #f19661);
+  font-size: 1.3em;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-top: 0.5em;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+article p:last-of-type {
+  color: black;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-top: 0.5em;
+}
+
+article button {
+  font-size: 1em;
+  background-color: transparent;
+  padding: 0.8em 1.5em;
+  margin: 1em auto;
+  border-radius: 10px;
+  display: block;
+}
+article button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* --- styles for artcle 2 popular dishes-- */
+
+.article2 div.col-8 {
+  border: solid rgb(201, 193, 193);
+  border-radius: 10px;
+  width: 40%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ---  styles for artcile3 best ofeer--- */
+
+div.best-offer {
+  background-image: radial-gradient(#f7ce68, #f19661);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+div.best-offer img {
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 1em;
+}
+
+div.offer-description {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+div.offer-description h1 {
+}
+
+div.offer-description p {
+  color: black;
+}
+div.offer-description strong {
+  font-size: 2em;
+  color: rgb(240, 104, 41);
+}
+
+div.offer-description span:first-of-type {
+  color: red;
+  text-decoration: line-through;
+  margin-right: 1em;
+}
+
+/* --- artcle 3 logo styles --- */
+
+article > p.delivery-text {
+  color: rgba(219, 213, 213, 1);
+  margin-bottom: 1em;
+}
+
+article > div.delivery-logo img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+/* --- footer --- */
+
+footer {
+  color: #fff;
+  background-color: black;
+  margin: 5em 0 0 0;
+  padding: 1em;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+footer div.logo {
+  flex: 0 0 100%;
+}
+
+footer > div.download {
+  flex: 0 0 100%;
+  margin-top: 3em;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+footer > div.download h1 {
+  flex: 0 0 100%;
+  margin-bottom: 0.3em;
+}
+footer > div.download p {
+  flex: 0 0 100%;
+  margin-bottom: 1em;
+}
+
+footer div.download img {
+  border: solid white;
+  border-radius: 5px;
+  margin: 1em;
+  width: 30%;
+}
+
+footer div.links {
+  margin-top: 2em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+div.links ul {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+div.useful-links p {
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-right: 4em;
+}
+div.social p {
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+/* --- work on ressponsuvesness -- */
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+
+  article div.col-4 {
+    width: 100%;
+  }
+
+  .article2 div.col-8 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+
+  /* --- header  --- */
+
+  header > div.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header > div.row2 > img {
+    display: inline-block;
+    width: 50%;
+  }
+  header > div.row2 > p {
+    display: inline-block;
+    width: 50%;
+  }
+
+  /* --- artcile 1 recent items --- */
+
+  article div.col-4 {
+    width: 20%;
+  }
+
+  /* --- artcile 2 all items --- */
+
+  .article2 div.col-8 {
+    width: 20%;
+    margin: 1em;
+  }
+
+  /* --- artcile best offer items --- */
+
+  div.best-offer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  div.offer-description {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  /* --- artcile delivery --- */
+
+  article > div.delivery-logo {
+    width: 60%;
+    margin: auto;
+  }
+
+  /* --- foptter --- */
+
+  footer {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer div.download {
+    flex: 0 0 50%;
+  }
+}
