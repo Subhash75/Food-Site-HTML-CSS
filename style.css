@@ -61,6 +61,13 @@ header > div.row2 {
   align-items: center;
 }
 
+div.row2 p {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
 header > div.row2 img {
   width: 100%;
 }
@@ -71,12 +78,6 @@ header > button {
   margin: 1em auto;
   border-radius: 10px;
   display: block;
-  transition: all 0.5s;
-}
-
-header > button:hover {
-  color: black;
-  background-color: #fff;
 }
 
 /* --- styles for article --- */
@@ -91,7 +92,12 @@ article > div {
   justify-content: space-around;
 }
 
-article div.col-4 {
+article > div.recent-foods, article > div.popular-foods{
+  perspective: 300px;
+}
+
+article div.col {
+  box-shadow: 0 0 10px -5px;
   border: solid rgb(201, 193, 193);
   border-radius: 10px;
   width: 40%;
@@ -101,7 +107,18 @@ article div.col-4 {
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
+  transform: translateZ(-10px);
+  transition: 100ms transform ease-in;
 }
+
+article div.col-4:hover {
+  transform: translateZ(0px);
+}
+
+article div.col-8:hover {
+  transform: translateZ(-5px);
+}
+
 
 article p.title {
   color: black;
@@ -146,31 +163,21 @@ article p:last-of-type {
   margin-top: 0.5em;
 }
 
-article button {
+article button.view-item-button {
   font-size: 1em;
   background-color: transparent;
+  background-image: radial-gradient(#f7ce68, #f19661);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  text-transform: uppercase;
   padding: 0.8em 1.5em;
   margin: 1em auto;
+  border: solid transparent;
   border-radius: 10px;
+  box-shadow: 0 0 10px -5px;
   display: block;
-}
-article button:hover {
-  color: white;
-  background-color: black;
-}
-
-/* --- styles for artcle 2 popular dishes-- */
-
-.article2 div.col-8 {
-  border: solid rgb(201, 193, 193);
-  border-radius: 10px;
-  width: 40%;
-  padding: 0.5em;
-  margin-bottom: 1em;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* ---  styles for artcile3 best ofeer--- */
@@ -209,6 +216,14 @@ div.offer-description span:first-of-type {
   color: red;
   text-decoration: line-through;
   margin-right: 1em;
+}
+
+div.offer-description button.offer {
+  background-color: transparent;
+  padding: 0.8em 1.5em;
+  margin: 1em auto;
+  border-radius: 10px;
+  display: block;
 }
 
 /* --- artcle 3 logo styles --- */
